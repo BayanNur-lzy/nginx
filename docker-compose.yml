@@ -1,0 +1,13 @@
+  nginx:
+    image: nginx:1.16.1
+    ports:
+      - 1025
+#    volumes:
+#      - ./nginx/conf/:/etc/nginx/conf.d/
+#      - ./nginx/htpasswd:/etc/nginx/htpasswd
+    command:
+      - /bin/bash
+      - -c
+      - "nginx -g 'daemon off;'"
+#    depends_on:
+#      - kibana
