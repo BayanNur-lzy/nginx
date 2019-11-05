@@ -5,7 +5,7 @@ MAINTAINER bylz
 
 USER root
 # 将jar包添加到容器中
-ADD ./conf/nginx.conf /etc/nginx/conf.d
+#ADD ./conf/nginx.conf /etc/nginx/conf.d
 
 USER 1000
 #ADD ./target/nginx-0.0.1-SNAPSHOT.jar /etc/nginx/nginx-0.0.1-SNAPSHOT.jar
