@@ -16,4 +16,4 @@ USER 1000
 # 修改这个jar包的访问时间和修改时间为当前时间
 #RUN bash -c 'touch /etc/nginx/nginx-0.0.1-SNAPSHOT.jar'
 #USER 1000
-ENTRYPOINT ["nginx","-c","/app/nginx"]
+ENTRYPOINT ["nginx","-c","/app/nginx.conf"]
