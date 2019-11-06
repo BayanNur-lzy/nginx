@@ -6,7 +6,7 @@ USER root
 ADD ./conf/nginx.conf /app/nginx.conf
 # 将jar包添加到容器中
 #ADD ./conf/nginx.conf /etc/nginx/conf.d
-RUN chmod -R 777 /app
+RUN chmod -R 777 /app  && chown -R 1000:1000 /app
 USER 1000
 #ADD ./target/nginx-0.0.1-SNAPSHOT.jar /etc/nginx/nginx-0.0.1-SNAPSHOT.jar
 #CMD ["/nginx -c /etc/nginx/conf.d/nginx.conf"]
